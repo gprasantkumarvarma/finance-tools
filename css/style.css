@@ -1,0 +1,197 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background: #1e1e1e;
+  color: white;
+  padding: 15px;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.sidebar nav a {
+  display: block;
+  padding: 12px;
+  color: #ddd;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.sidebar nav a:hover {
+  background: #333;
+}
+
+/* Main */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top Bar */
+.topbar {
+  height: 60px;
+  border-bottom: 1px solid #ddd;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cta {
+  padding: 8px 12px;
+  border: none;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+/* Content */
+.content {
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+/* HERO */
+.gst-hero {
+  background: #2f3ecb;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.gst-hero h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.gst-hero p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+/* CARD */
+.gst-card {
+  background: white;
+  max-width: 900px;
+  margin: -60px auto 40px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* INPUTS */
+.gst-inputs {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.field {
+  flex: 1;
+  min-width: 200px;
+}
+
+.field label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.field input,
+.field select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+/* BUTTON */
+.calc-btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  background: #2f3ecb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.calc-btn:hover {
+  background: #2432a8;
+}
+
+/* RESULT */
+.gst-result {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.gst-result h2 {
+  font-size: 32px;
+  margin: 0;
+}
+
+.gst-result span {
+  font-size: 14px;
+  color: #555;
+}
+
+.symbol {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .gst-result {
+    gap: 20px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+  background: #f4f6f8;
+  color: #111827;
+}

@@ -1,0 +1,62 @@
+<!-- HERO SECTION -->
+<div class="gst-hero">
+  <h1>FREE GST CALCULATOR</h1>
+  <p>
+    A simple GST calculator for small businesses in India. Calculate GST
+    instantly without complex math.
+  </p>
+</div>
+
+<!-- CALCULATOR CARD -->
+<div class="gst-card">
+  <!-- INPUT ROW -->
+  <div class="gst-inputs">
+    <div class="field">
+      <label>Amount</label>
+      <input type="number" id="amount" placeholder="Enter amount" />
+    </div>
+
+    <div class="field">
+      <label>GST %</label>
+      <select id="gstRate">
+        <option value="0">0%</option>
+        <option value="5">5%</option>
+        <option value="12">12%</option>
+        <option value="18">18%</option>
+        <option value="28">28%</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label>Tax</label>
+      <select id="gstType">
+        <option value="exclusive">Exclusive</option>
+        <option value="inclusive">Inclusive</option>
+      </select>
+    </div>
+  </div>
+
+  <button id="calculateBtn" class="calc-btn">Calculate</button>
+
+  <!-- RESULT ROW -->
+  <div class="gst-result">
+    <div>
+      <h2 id="actualAmount">₹0</h2>
+      <span>Actual Amount</span>
+    </div>
+
+    <div class="symbol">+</div>
+
+    <div>
+      <h2 id="gstAmount">₹0</h2>
+      <span>GST Amount</span>
+    </div>
+
+    <div class="symbol">=</div>
+
+    <div>
+      <h2 id="totalAmount">₹0</h2>
+      <span>Total Amount</span>
+    </div>
+  </div>
+</div>
